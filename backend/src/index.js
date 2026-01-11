@@ -1,7 +1,10 @@
 import express from "express";
 import dotenv from "dotenv";
 
-dotenv.config();
+const resulst = dotenv.config({ path: "./.env" });
+if(resulst.error) {
+    console.log("env error", resulst.error);
+}
 
 const app = express();
 const PORT = process.env.PORT || 5000;
