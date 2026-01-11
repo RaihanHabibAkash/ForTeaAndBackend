@@ -10,7 +10,7 @@ app.get("/", (req, res) => {
     res.send("Hey there")
 });
 
-app.get("facebook", (req, res) => {
+app.get("/facebook/", (req, res) => {
     res.send("Face book here")
 })
 
